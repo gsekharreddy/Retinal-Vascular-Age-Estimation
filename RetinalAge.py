@@ -65,7 +65,7 @@ class RetinalDataset(Dataset):
         return img, torch.tensor(age, dtype=torch.float32)
 
 # ==============================
-# TRANSFORMS
+# TRANSFORMS and NORMALIZATION
 # ==============================
 transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
